@@ -12,7 +12,7 @@ public class LoadAssetBundles : MonoBehaviour
     }
  
     IEnumerator GetAssetBundle() {
-        UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle("https://red112.github.io/unity_asset_bundle/myasset");
+        UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle("https://red112.github.io/unity_asset_bundle/myasset.asset");
         yield return www.SendWebRequest();
  
         if (www.result != UnityWebRequest.Result.Success) {
